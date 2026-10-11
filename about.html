@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6e0800" />
+    <title>About | ARIDE</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        background: #6e0800;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      .site-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem clamp(1.25rem, 5vw, 4rem);
+      }
+
+      .site-nav a {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .site-nav .brand {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        letter-spacing: 0.08em;
+      }
+
+      .site-nav .brand img {
+        display: block;
+        width: auto;
+        height: 40px;
+        object-fit: contain;
+      }
+
+      .site-nav-links {
+        display: flex;
+        align-items: center;
+        gap: clamp(1rem, 3vw, 2rem);
+      }
+
+      .about {
+        display: grid;
+        min-height: calc(100vh - 4rem);
+        place-content: center;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .about h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+      }
+
+      .about p {
+        max-width: 34rem;
+        margin: 0 auto;
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <img src="aride%20logo.png" alt="ARIDE" />
+        </a>
+        <div class="site-nav-links">
+          <a href="about.html" aria-current="page">About</a>
+          <a
+            href="https://www.tiktok.com/@aride.my?_r=1&_t=ZS-9ASTD3l9icf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >TikTok</a>
+        </div>
+      </nav>
+    </header>
+    <main class="about">
+      <div>
+        <h1>About ARIDE</h1>
+        <p>ARIDE is coming soon. Follow us on TikTok for updates.</p>
+      </div>
+    </main>
+  </body>
+</html>
